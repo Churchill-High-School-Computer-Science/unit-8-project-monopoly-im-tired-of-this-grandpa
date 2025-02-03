@@ -20,7 +20,7 @@ public class Display extends JFrame {
             Graphics2D g2d = (Graphics2D) g;
 
             // Draw the board background
-            g2d.setColor(new Color(240, 230, 200));
+            g2d.setColor(new Color(180, 233, 173));
             g2d.fillRect(0, 0, 75 * 11, 75 * 11);
 
             // Draw grid and properties
