@@ -3,22 +3,22 @@ import java.awt.Color;
 
 public class Property {
     
-    Color color;
-    String name;
-    String owner;
-    int numHouses;  
-    int numHotels;
-    int costToBuildHouse;
-    boolean isMortgaged;
-    int cost;
-    int rent;
+   private Color color;
+   private String name;
+   private Player owner;
+   private int numHouses;  
+   private int numHotels;
+   private int costToBuildHouse;
+   private boolean isMortgaged;
+   private int cost;
+   private int rent;
 
 
     //Step 2
-    public Property(Color c, String n, String o, int h, int ho, int costtbh, boolean m, int co, int r){
+    public Property(Color c, String n, int h, int ho, int costtbh, boolean m, int co, int r){
         color = c;
         name = n;
-        owner = o;
+        owner = null;
         numHouses = h;
         numHotels = ho; 
         costToBuildHouse = costtbh;
@@ -42,7 +42,7 @@ public class Property {
     }
 
     //TODO fix
-    public String getOwner(){
+    public Player getOwner(){
         return owner;
     }
 
@@ -62,5 +62,10 @@ public class Property {
     public int getCostToBuildHouse(){
         return costToBuildHouse;
     }
+
+    public void setOwner(Player owner) {
+        this.owner = owner;
+    }
+    
 }
 
